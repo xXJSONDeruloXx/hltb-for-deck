@@ -1,4 +1,4 @@
-import { DialogButtonPrimary, Router, ServerAPI } from 'decky-frontend-lib';
+import { DialogButtonPrimary, Navigation, ServerAPI } from 'decky-frontend-lib';
 import useHltb from '../../hooks/useHltb';
 import { usePreference, useStyle } from '../../hooks/useStyle';
 import style from './style';
@@ -43,7 +43,7 @@ export const GameStats = ({ serverApi, game, appId, id }: GameStatsProps) => {
                     <DialogButtonPrimary
                         className={`hltb-details-btn ${btnStyle}`}
                         onClick={() =>
-                            Router.NavigateToExternalWeb(
+                            Navigation.NavigateToExternalWeb(
                                 `https://howlongtobeat.com/game/${gameId}`
                             )
                         }
