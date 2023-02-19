@@ -29,7 +29,7 @@
         "typescript": "^4.9.5"
     },
     "dependencies": {
-        "decky-frontend-lib": "^3.18.10",
+        "decky-frontend-lib": "^3.18.11",
         "fast-levenshtein": "^3.0.0",
         "localforage": "^1.10.0",
         "react": "^18.2.0",
