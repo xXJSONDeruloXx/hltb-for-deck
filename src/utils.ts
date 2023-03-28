@@ -1,7 +1,9 @@
 export const normalize = (str: string) => {
+    console.log(str);
     return str
         .toLowerCase()
-        .replace(/[^a-z0-9 \x7f-\xff]/gi, ' ')
-        .replace(/\s+/gi, ' ')
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .replace(/[^a-zA-Z0-9\-\/\s]/g, '')
         .trim();
 };
