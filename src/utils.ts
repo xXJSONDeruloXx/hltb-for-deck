@@ -1,5 +1,4 @@
 export const normalize = (str: string) => {
-    console.log(str);
     return str
         .toLowerCase()
         .normalize('NFD')
