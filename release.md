@@ -1,3 +1,3 @@
-## HLTB for Deck, How Long to Beat integration for the Steam Deck (v1.2.3)
+## HLTB for Deck, How Long to Beat integration for the Steam Deck (v1.2.4)
 
-- Addresses issues with some stats for games not showing up because of special characters
+- Bump Decky Frontend Library

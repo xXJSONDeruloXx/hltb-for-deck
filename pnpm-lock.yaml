@@ -2,8 +2,8 @@ lockfileVersion: '6.0'
 
 dependencies:
   decky-frontend-lib:
-    specifier: ^3.19.2
-    version: 3.19.2
+    specifier: ^3.20.5
+    version: 3.20.5
   fast-levenshtein:
     specifier: ^3.0.0
     version: 3.0.0
@@ -770,8 +770,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /decky-frontend-lib@3.19.2:
-    resolution: {integrity: sha512-J8QYlzi+FEwwoDxoUOhq+BvRO1bdg8O60oxyfcRF7nLalGPrRyaXx4MNNP117X/RY7smPF1xigjglNthdv9Yzw==}
+  /decky-frontend-lib@3.20.5:
+    resolution: {integrity: sha512-aXllFYhWovoiyBHNzH8PW9EYgXotY9ysuU9icFNgrOWFotyJV+2KGLnfYEyBlDNiexKvXKVRKPw1gRFX2hP4AQ==}
     dev: false
 
   /deepmerge@4.3.1:
@@ -1887,6 +1887,7 @@ packages:
 
   /ts-node@10.9.1(@types/node@18.15.10)(typescript@4.9.5):
     resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==}
+    hasBin: true
     peerDependencies:
       '@swc/core': '>=1.2.50'
       '@swc/wasm': '>=1.2.50'
