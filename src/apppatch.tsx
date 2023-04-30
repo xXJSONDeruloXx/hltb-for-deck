@@ -27,7 +27,7 @@ export const patchAppPage = (serverApi: ServerAPI) => {
                                     .children;
                             // This always seems to be -1
                             const hltbComponentIndex =
-                                componentToSplice.findIndex(
+                                componentToSplice?.findIndex(
                                     (child: ReactElement) => {
                                         return (
                                             child?.props?.id === 'hltb-for-deck'
@@ -36,7 +36,7 @@ export const patchAppPage = (serverApi: ServerAPI) => {
                                 );
 
                             // We want to splice into the component before this point
-                            const spliceIndex = componentToSplice.findIndex(
+                            const spliceIndex = componentToSplice?.findIndex(
                                 (child: ReactElement) => {
                                     return (
                                         child?.props?.childFocusDisabled !==
@@ -63,7 +63,7 @@ export const patchAppPage = (serverApi: ServerAPI) => {
 
                             if (hltbComponentIndex < 0) {
                                 if (spliceIndex > -1) {
-                                    componentToSplice.splice(
+                                    componentToSplice?.splice(
                                         spliceIndex,
                                         0,
                                         component
@@ -74,7 +74,7 @@ export const patchAppPage = (serverApi: ServerAPI) => {
                                     );
                                 }
                             } else {
-                                componentToSplice.splice(
+                                componentToSplice?.splice(
                                     hltbComponentIndex,
                                     1,
                                     component
