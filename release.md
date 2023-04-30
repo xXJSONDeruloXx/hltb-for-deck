@@ -1,3 +1,4 @@
-## HLTB for Deck, How Long to Beat integration for the Steam Deck (v1.2.4)
+## HLTB for Deck, How Long to Beat integration for the Steam Deck (v1.3.0)
 
-- Bump Decky Frontend Library
+- Fixed an issue with soundtracks and HLTB for Deck trying to inject
+- Slimmer default theme thanks to https://github.com/jpjordan-git
