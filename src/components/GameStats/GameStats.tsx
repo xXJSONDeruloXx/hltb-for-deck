@@ -36,21 +36,7 @@ export const GameStats = ({ serverApi, game, appId, id }: GameStatsProps) => {
     return (
         <div id={id}>
             {style}
-            <div
-                className={`${baseClass} ${hltbInfoStyle} ${hltbInfoPosition}`}
-            >
-                {gameId && !hideDetails && (
-                    <DialogButtonPrimary
-                        className={`hltb-details-btn ${btnStyle}`}
-                        onClick={() =>
-                            Navigation.NavigateToExternalWeb(
-                                `https://howlongtobeat.com/game/${gameId}`
-                            )
-                        }
-                    >
-                        View Details
-                    </DialogButtonPrimary>
-                )}
+            <div className={`${baseClass} ${hltbInfoStyle} ${hltbInfoPosition}`}>
                 <ul>
                     <li>
                         <p className="hltb-gametime">{mainStat} hours</p>
@@ -68,6 +54,20 @@ export const GameStats = ({ serverApi, game, appId, id }: GameStatsProps) => {
                         <p className="hltb-gametime">{allStylesStat} hours</p>
                         <p className="hltb-label">All Styles</p>
                     </li>
+                    {gameId && !hideDetails && (
+                        <li>
+                            <DialogButtonPrimary
+                                className={`hltb-details-btn ${btnStyle}`}
+                                onClick={ () =>
+                                    Navigation.NavigateToExternalWeb(
+                                        `https://howlongtobeat.com/game/${gameId}`
+                                    )
+                                }
+                            >
+                                View Details
+                            </DialogButtonPrimary>
+                        </li>
+                    )}
                 </ul>
             </div>
         </div>

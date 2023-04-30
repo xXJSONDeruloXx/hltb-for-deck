@@ -17,9 +17,9 @@ export default (
     background: rgba(14, 20, 27, 0.5);
     position: absolute;
     border: none;
-    padding-top: 5px;
-    top: -85px;
-    height: 80px;
+    padding-top: 0px;
+    top: -40px;
+    height: 40px;
     width: 100%;
 }
 
@@ -68,26 +68,27 @@ export default (
 }
 
 .hltb-gametime {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.hltb-info-clean .hltb-gametime {
     font-size: 20px;
     font-weight: bold;
 }
 
 .hltb-label {
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 8px;
 }
 .hltb-details-btn {
     background: transparent !important;
-    padding: 0px 2.8vw !important;
     color: #1a9fff !important;
-    display: flex !important;
-    margin-left: auto !important;
-    font-size: 14px !important;
+    margin: auto !important;
+    font-size: 10px !important;
     font-weight: bold !important;
-    width: fit-content !important;
-    min-width: 0px !important;
     text-transform: uppercase;
-    line-height: 14px !important;
+    line-height: 10px !important;
 }
 .hltb-details-btn-clean {
     margin: auto !important;
