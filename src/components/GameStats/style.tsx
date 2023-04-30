@@ -18,8 +18,8 @@ export default (
     position: absolute;
     border: none;
     padding-top: 0px;
-    top: -34px;
-    height: 34px;
+    top: -40px;
+    height: 40px;
     width: 100%;
 }
 
@@ -68,7 +68,12 @@ export default (
 }
 
 .hltb-gametime {
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.hltb-info-clean .hltb-gametime {
+    font-size: 20px;
     font-weight: bold;
 }
 
