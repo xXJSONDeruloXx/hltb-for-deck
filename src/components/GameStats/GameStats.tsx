@@ -16,6 +16,12 @@ export const GameStats = ({ serverApi, game, appId, id }: GameStatsProps) => {
     const hltbStyle = useStyle();
     const hideDetails = usePreference();
     const baseClass = hltbStyle === null ? 'hltb-info-absolute' : 'hltb-info';
+    // Hide if there are no stats
+    const hide =
+        mainStat === mainPlusStat &&
+        mainPlusStat === completeStat &&
+        completeStat === allStylesStat &&
+        allStylesStat === '--';
     let hltbInfoStyle = '';
     switch (hltbStyle) {
         case 'clean':
@@ -34,9 +40,11 @@ export const GameStats = ({ serverApi, game, appId, id }: GameStatsProps) => {
             : 'hltb-details-btn-clean';
 
     return (
-        <div id={id}>
+        <div id={id} style={{ display: hide ? 'none' : 'block' }}>
             {style}
-            <div className={`${baseClass} ${hltbInfoStyle} ${hltbInfoPosition}`}>
+            <div
+                className={`${baseClass} ${hltbInfoStyle} ${hltbInfoPosition}`}
+            >
                 <ul>
                     <li>
                         <p className="hltb-gametime">{mainStat} hours</p>
@@ -58,7 +66,7 @@ export const GameStats = ({ serverApi, game, appId, id }: GameStatsProps) => {
                         <li>
                             <DialogButtonPrimary
                                 className={`hltb-details-btn ${btnStyle}`}
-                                onClick={ () =>
+                                onClick={() =>
                                     Navigation.NavigateToExternalWeb(
                                         `https://howlongtobeat.com/game/${gameId}`
                                     )

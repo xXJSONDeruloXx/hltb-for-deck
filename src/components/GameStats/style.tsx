@@ -29,8 +29,8 @@ export default (
 }
 
 .hltb-info-clean {
+    background: rgba(14, 20, 27, 0.5);
     position: absolute;
-    /*top: calc(50vh - 40px - 108px);*/
     top: -55vh;
     right: 2.8vw;
     width: fit-content;
@@ -45,7 +45,7 @@ export default (
 
 .hltb-info ul {
     list-style: none;
-    padding: 5px 40px;
+    padding: 5px 35px;
     margin: 0px;
     display: flex;
 }
