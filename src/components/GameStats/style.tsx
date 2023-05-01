@@ -68,7 +68,7 @@ export default (
 }
 
 .hltb-gametime {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
 }
 
@@ -79,7 +79,7 @@ export default (
 
 .hltb-label {
     text-transform: uppercase;
-    font-size: 8px;
+    font-size: 10px;
 }
 .hltb-details-btn {
     background: transparent !important;
