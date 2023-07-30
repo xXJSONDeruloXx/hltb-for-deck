@@ -15,6 +15,7 @@ export type HLTBStats = {
     completeStat: string;
     allStylesStat: string;
     lastUpdatedAt: Date;
+    platforms: string;
     gameId?: number;
 };
 

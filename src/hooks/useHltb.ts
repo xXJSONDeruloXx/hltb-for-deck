@@ -23,6 +23,7 @@ const useHltb = (appId: number, game: string, serverApi: ServerAPI) => {
         mainPlusStat: '--',
         completeStat: '--',
         allStylesStat: '--',
+        platforms: '--',
         gameId: undefined,
         lastUpdatedAt: new Date(),
     });
@@ -132,6 +133,10 @@ const useHltb = (appId: number, game: string, serverApi: ServerAPI) => {
                             allStylesStat:
                                 gameStats.comp_all > 0
                                     ? (gameStats.comp_all / 60 / 60).toFixed(1)
+                                    : '--',
+                            platforms:
+                            gameStats.profile_platform
+                                    ? (gameStats.profile_platform).fixed(1)
                                     : '--',
                             gameId: gameStats.game_id,
                             lastUpdatedAt: new Date(),
