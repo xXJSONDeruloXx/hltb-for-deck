@@ -136,7 +136,7 @@ const useHltb = (appId: number, game: string, serverApi: ServerAPI) => {
                                     : '--',
                             platforms:
                             gameStats.profile_platform
-                                    ? (gameStats.profile_platform).fixed(1)
+                                    ? (gameStats.profile_platform).tofixed(1)
                                     : '--',
                             gameId: gameStats.game_id,
                             lastUpdatedAt: new Date(),
