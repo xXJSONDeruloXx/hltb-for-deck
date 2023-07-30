@@ -11,7 +11,7 @@ type GameStatsProps = {
 };
 
 export const GameStats = ({ serverApi, game, appId, id }: GameStatsProps) => {
-    const { mainStat, mainPlusStat, completeStat, allStylesStat, gameId } =
+    const { mainStat, mainPlusStat, completeStat, allStylesStat, platforms, gameId } =
         useHltb(appId, game, serverApi);
     const hltbStyle = useStyle();
     const hideDetails = usePreference();
@@ -21,7 +21,8 @@ export const GameStats = ({ serverApi, game, appId, id }: GameStatsProps) => {
         mainStat === mainPlusStat &&
         mainPlusStat === completeStat &&
         completeStat === allStylesStat &&
-        allStylesStat === '--';
+        allStylesStat === '--'; &&
+        platforms === '--';
     let hltbInfoStyle = '';
     switch (hltbStyle) {
         case 'clean':
@@ -63,8 +64,8 @@ export const GameStats = ({ serverApi, game, appId, id }: GameStatsProps) => {
                         <p className="hltb-label">All Styles</p>
                     </li>
                     <li>
-                        <p className="hltb-gametime">{allStylesStat} hours</p>
-                        <p className="hltb-label">All Styles</p>
+                        <p className="hltb-gametime">{platforms} Platforms</p>
+                        <p className="hltb-label">Platforms</p>
                     </li>
                     {gameId && !hideDetails && (
                         <li>
