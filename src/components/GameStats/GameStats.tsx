@@ -62,6 +62,10 @@ export const GameStats = ({ serverApi, game, appId, id }: GameStatsProps) => {
                         <p className="hltb-gametime">{allStylesStat} hours</p>
                         <p className="hltb-label">All Styles</p>
                     </li>
+                    <li>
+                        <p className="hltb-gametime">{allStylesStat} hours</p>
+                        <p className="hltb-label">All Styles</p>
+                    </li>
                     {gameId && !hideDetails && (
                         <li>
                             <DialogButtonPrimary
